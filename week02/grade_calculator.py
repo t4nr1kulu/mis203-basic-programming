@@ -28,7 +28,7 @@ while True:
   student_num=student_num+1
 #0/0 hatasından kurtulmak için bir if statement koydum
 if student_num>0:
-#toplam puanı toplam kişi sayısına bölerek aver buldum ve ekrana yazdırdım
+#toplam puanı toplam kişi sayısına bölerek aver buldum ve ekrana yazdırdım eğer while içinde olursa her girişte ortalama hesaplar
   aver=toplam_not/student_num
   print(f"Total students:{student_num}")
   print(f"Average note:{aver}")
