@@ -43,9 +43,16 @@ Why does the order of the rules matter? Python checks if/elif statements from to
 # Week 04: Surprise Me - Pong Game
 
 ## 1. Description
-A two-player interactive Pong game demonstrating `while` loops, `if/else` conditions, and functions. Uses two external libraries: `turtle` (graphics and keyboard controls) and `random` (ball trajectory).
+A two-player interactive Pong game demonstrating `while` loops, `if/else` conditions, and functions. Uses two external libraries: `turtle` (for graphics and keyboard controls) and `random` (for ball trajectory).
 
-## 2. Test Cases
+## 2. How to Play
+Run the script to open the game window.
+- **Player 1 (Left Paddle):** Use `W` (Up) and `S` (Down).
+- **Player 2 (Right Paddle):** Use `Up Arrow` and `Down Arrow`.
+- **Goal:** Deflect the ball. The game ends if the ball passes your paddle.
+- **Result:** The winner ("Player 1 wins!" or "Player 2 wins!") is printed in the terminal/console behind the game window.
+
+## 3. Test Cases
 
 | Test Case | Condition | Expected Output | Actual Output | Pass/Fail |
 | :--- | :--- | :--- | :--- | :--- |
@@ -53,5 +60,5 @@ A two-player interactive Pong game demonstrating `while` loops, `if/else` condit
 | **Paddle Hit** | Ball hits X = 290 or -290 | Reverses X, speed +0.1 | Bounces back, gets faster | Pass ✅ |
 | **Game Over** | Ball X > 300 or < -300 | Loop breaks, prints winner | Prints "Player X wins!" | Pass ✅ |
 
-## 3. Note & AI Usage
-**AI Usage:** I used AI as an assistant to review my code, translate my original Turkish `print` outputs into proper English (e.g., "Player 1 wins!"), and format this README table. The core game logic and loop were written by me.
+## 4. Note & AI Usage
+**AI Usage:** I used AI as an assistant to review my code, translate my original Turkish `print` outputs into proper English (e.g., "Player 1 wins!"), and format this README file. The core game logic and loop were written by me.
