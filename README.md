@@ -38,3 +38,20 @@ Input: Age 65 (Boundary age), Weekday. Result: Senior discount (50%) applied suc
 Input: Age -5 (Invalid age). Result: Program printed "Invalid age" and restarted the loop asking for the name again.
 Input: Age 20, Student "yes", Weekend. Result: Student discount (30%) applied to the base price of 250 TRY.
 Why does the order of the rules matter? Python checks if/elif statements from top to bottom and stops at the first True condition. If the "Student" rule came before the "Child" rule, a 10-year-old student would wrongly receive the 30% student discount instead of the 40% child discount they deserve.
+
+
+# Week 04: Surprise Me - Pong Game
+
+## 1. Description
+A two-player interactive Pong game demonstrating `while` loops, `if/else` conditions, and functions. Uses two external libraries: `turtle` (graphics and keyboard controls) and `random` (ball trajectory).
+
+## 2. Test Cases
+
+| Test Case | Condition | Expected Output | Actual Output | Pass/Fail |
+| :--- | :--- | :--- | :--- | :--- |
+| **Wall Bounce** | Ball Y > 190 or < -190 | Reverses Y direction | Bounces off top/bottom | Pass ✅ |
+| **Paddle Hit** | Ball hits X = 290 or -290 | Reverses X, speed +0.1 | Bounces back, gets faster | Pass ✅ |
+| **Game Over** | Ball X > 300 or < -300 | Loop breaks, prints winner | Prints "Player X wins!" | Pass ✅ |
+
+## 3. Note & AI Usage
+**AI Usage:** I used AI as an assistant to review my code, translate my original Turkish `print` outputs into proper English (e.g., "Player 1 wins!"), and format this README table. The core game logic and loop were written by me.
