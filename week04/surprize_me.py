@@ -1,5 +1,5 @@
-import turtle
 import random
+import turtle
 
 window = turtle.Screen()
 
@@ -73,7 +73,7 @@ def balldown():
 
 def speedUp():
     global ballSpeed
-    global ball
+    
 
     if (ballSpeed < 3):
         ballSpeed += 0.1
